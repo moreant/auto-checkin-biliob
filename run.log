@@ -1,1 +1,1 @@
-2020-08-23 09:54:38 - 2020-08-23 09:56:15 - {"timestamp":"2020-08-23T09:56:17.911+0000","status":403,"error":"Forbidden","message":"Access Denied","path":"/api/user/check-in"}
+2020-08-23 09:54:38 - 2020-08-23 09:56:15 - {"timestamp":"2020-08-23T09:56:17.911+0000","status":403,"error":"Forbidden","message":"Access Denied","path":"/api/user/check-in"}2020-08-23 09:58:18 - {"msg":"已经签过到了","code":-1}
