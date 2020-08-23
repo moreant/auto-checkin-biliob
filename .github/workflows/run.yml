@@ -25,7 +25,7 @@ jobs:
         SESSION: ${{ secrets.SESSION }}
       run: | 
         echo -n `date +%Y-%m-%d\ %H:%M:%S`\ -\ >> ./run.log 
-        curl https://www.biliob.com/api/user/check-in -X POST --cookie "SESSION="$TOKEN""
+        curl https://www.biliob.com/api/user/check-in -X POST --cookie "SESSION="$TOKEN"" >> ./run.log
     - name: Commit #上传日志到仓库
       env:
        NAME: moreant
