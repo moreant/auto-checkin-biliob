@@ -27,6 +27,7 @@ jobs:
         echo -n `date +%Y-%m-%d\ %H:%M:%S`\ -\ >> ./run.log 
         curl https://www.biliob.com/api/user/check-in -X POST --cookie "SESSION="$SESSION"" >> ./run.log
         echo >> ./run.log
+        tail run.log #避免日志上传失败丢失日志
     - name: Commit #上传日志到仓库
       env:
        NAME: moreant
