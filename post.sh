@@ -1,0 +1,1 @@
+ echo -n `date +%Y-%m-%d\ %H:%M:%S`\ -\ >> ./post.log && curl https://www.biliob.com/api/user/check-in -X POST --cookie "SESSION=YzYzNzNhMjktMmFjYS00MTc3LWExMTctODMyYWJlNmJkYmM1" >> ./post.log && echo >> ./post.log
