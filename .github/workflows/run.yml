@@ -1,4 +1,4 @@
-name: Auto Chick In BiliOB
+name: Auto check in BiliOB
 
 on: 
   release:
@@ -14,7 +14,7 @@ on:
     types: [started]
    
 jobs:
-  chicking:
+  checking:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id  # 自己点的 start
     steps:
