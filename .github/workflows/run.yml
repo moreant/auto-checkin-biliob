@@ -1,0 +1,41 @@
+name: Auto Api Secret
+
+on: 
+  release:
+    types: [published]
+  push:
+    tags:
+    - 'v*'
+  #  branches: 
+  #    - master
+  schedule:
+    - cron: '0 17 0 * *'
+  watch:
+    types: [started]
+   
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id  # 自己点的 start
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Test Api #Api调用
+      env:
+        SESSION: ${{ secrets.SESSION }}
+      run: | 
+        echo -n `date +%Y-%m-%d\ %H:%M:%S`\ -\ >> ./run.log 
+        curl https://www.biliob.com/api/user/check-in -X POST --cookie "SESSION="$TOKEN""
+    - name: Commit #上传日志到仓库
+      env:
+       NAME: moreant
+       EMAIL: moreant@foxmail.com
+      run: |
+        git config --global user.email "$EMAIL"
+        git config --global user.name "$NAME"
+        git add .
+        git commit -m "update log" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
