@@ -20,8 +20,8 @@
 
 
 2. 添加仓库的 Secrets 用于保存用户信息
-
-![4](.md_img/README/4.png)![3](.md_img/README/3.png)
+![3](.md_img/README/3.png)
+![4](.md_img/README/4.png)
 
 
 
