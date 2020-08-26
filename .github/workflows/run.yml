@@ -18,6 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id  # 自己点的 start
     steps:
+    - name: Setup timezone
+      uses: zcong1993/setup-timezone@master
+      with:
+        timezone: Asia/Shanghai 
     - name: Checkout
       uses: actions/checkout@master
     - name: Test Api #Api调用
