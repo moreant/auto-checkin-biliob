@@ -149,3 +149,4 @@
 
 2020-10-10 17:12:35 - {"code":1,"msg":"成功","data":{"exp":961.0,"credit":959.0}}
 2020-10-11 02:13:33 - {"timestamp":"2020-10-10T18:13:34.685+0000","status":403,"error":"Forbidden","message":"Access Denied","path":"/api/user/check-in"}
+2020-10-11 08:38:38 - {"code":1,"msg":"成功","data":{"exp":971.0,"credit":969.0}}
