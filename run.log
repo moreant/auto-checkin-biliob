@@ -167,3 +167,4 @@
 2020-10-16 08:38:52 - {"timestamp":"2020-10-16T00:38:55.010+00:00","status":403,"error":"Forbidden","message":"","path":"/api/user/check-in"}
 2020-10-16 17:13:45 - {"timestamp":"2020-10-16T09:13:46.387+00:00","status":403,"error":"Forbidden","message":"","path":"/api/user/check-in"}
 2020-10-17 02:14:15 - {"timestamp":"2020-10-16T18:14:16.179+00:00","status":500,"error":"Internal Server Error","message":"","path":"/api/user/check-in"}
+2020-10-17 08:38:31 - {"timestamp":"2020-10-17T00:38:33.639+00:00","status":500,"error":"Internal Server Error","message":"","path":"/api/user/check-in"}
