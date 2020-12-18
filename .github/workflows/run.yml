@@ -37,7 +37,7 @@ jobs:
        NAME: moreant
        EMAIL: moreant@foxmail.com
       run: |
-        git config --global user.email "$EMAIL"
+        git config --global user.email "rob@moreant.com"
         git config --global user.name "$NAME"
         git add .
         git commit -m "update log" -a
